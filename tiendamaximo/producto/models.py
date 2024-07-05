@@ -11,7 +11,6 @@ class Producto(models.Model):
 class Entrada(models.Model):
     fechaEntrada = models.DateTimeField() 
     cantidadComprada = models.IntegerField() 
-    
-c    
+    producto = models.ForeignKey(Producto,null=True,blank=True,on_delete=models.CASCADE)
     
 

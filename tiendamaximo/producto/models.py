@@ -12,6 +12,6 @@ class Entrada(models.Model):
     fechaEntrada = models.DateTimeField() 
     cantidadComprada = models.IntegerField() 
     
-c    
+  
     
 

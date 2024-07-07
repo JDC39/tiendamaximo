@@ -14,3 +14,7 @@ class Entrada(models.Model):
     producto = models.ForeignKey(Producto,null=True,blank=True,on_delete=models.CASCADE)
     
 
+class Salida(models.Model):
+    fechaSalida = models.DateTimeField()
+    cantidadVenta = models.IntegerField()
+    producto = models.ForeignKey(Producto,null=True,blank=True,on_delete=models.CASCADE)
